@@ -1,0 +1,139 @@
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
+.santd-switch {
+  font-family: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.65);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 22px;
+  min-width: 44px;
+  line-height: 20px;
+  vertical-align: middle;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  background-color: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 0.36s;
+  user-select: none;
+}
+.santd-switch-inner {
+  color: #fff;
+  font-size: 12px;
+  margin-left: 24px;
+  margin-right: 6px;
+  display: block;
+}
+.santd-switch .santd-switch-handler,
+.santd-switch:after {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 1px;
+  top: 1px;
+  border-radius: 18px;
+  background-color: #fff;
+  content: " ";
+  cursor: pointer;
+  transition: all 0.36s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+}
+.santd-switch:after {
+  box-shadow: 0 2px 4px 0 rgba(0, 35, 11, 0.2);
+}
+.santd-switch:active .santd-switch-handler,
+.santd-switch:active:after {
+  width: 24px;
+}
+.santd-switch .santd-switch-handler {
+  font-family: 'anticon';
+  animation: loadingCircle 1s infinite linear;
+  text-align: center;
+  background: transparent;
+  z-index: 1;
+  display: none;
+  font-size: 12px;
+}
+.santd-switch-loading .santd-switch-handler {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.65);
+}
+.santd-switch-checked.santd-switch-loading .santd-switch-handler {
+  color: #1890ff;
+}
+.santd-switch:focus {
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+  outline: 0;
+}
+.santd-switch:focus:hover {
+  box-shadow: none;
+}
+.santd-switch-small {
+  height: 16px;
+  min-width: 28px;
+  line-height: 14px;
+}
+.santd-switch-small .santd-switch-inner {
+  margin-left: 18px;
+  margin-right: 3px;
+  font-size: 12px;
+}
+.santd-switch-small .santd-switch-handler,
+.santd-switch-small:after {
+  width: 12px;
+  height: 12px;
+}
+.santd-switch-small:active .santd-switch-handler,
+.santd-switch-small:active:after {
+  width: 16px;
+}
+.santd-switch-small.santd-switch-checked .santd-switch-handler {
+  left: 100%;
+  margin-left: -13px;
+}
+.santd-switch-small.santd-switch-checked .santd-switch-inner {
+  margin-left: 3px;
+  margin-right: 18px;
+}
+.santd-switch-small.santd-switch-loading .santd-switch-handler {
+  animation: AntSwitchSmallLoadingCircle 1s infinite linear;
+  font-weight: bold;
+}
+.santd-switch-checked {
+  background-color: #1890ff;
+}
+.santd-switch-checked .santd-switch-inner {
+  margin-left: 6px;
+  margin-right: 24px;
+}
+.santd-switch-checked .santd-switch-handler {
+  left: 100%;
+  margin-left: -19px;
+}
+.santd-switch-checked:after {
+  left: 100%;
+  transform: translateX(-100%);
+  margin-left: -1px;
+}
+.santd-switch-loading,
+.santd-switch-disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+@keyframes AntSwitchSmallLoadingCircle {
+  0% {
+    transform-origin: 50% 50%;
+    transform: rotate(0deg) scale(0.66667);
+  }
+  100% {
+    transform-origin: 50% 50%;
+    transform: rotate(360deg) scale(0.66667);
+  }
+}
