@@ -19,6 +19,7 @@ git add dist
 git add es
 git add package.json
 git add README.md
+git rm -r --cached dest
 git commit -m 'deloy' --no-verify
 git push origin HEAD:cus_release
 git checkout c_release -f
