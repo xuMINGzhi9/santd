@@ -23542,7 +23542,7 @@
    */
 
 
-  function getVisibleRectForElement(element) {
+  function getVisibleRectForElement(element, alwaysByViewport) {
     var visibleRect = {
       left: 0,
       right: Infinity,
@@ -23615,7 +23615,7 @@
       element.style.position = originalPosition;
     }
 
-    if (isAncestorFixed(element)) {
+    if (alwaysByViewport || isAncestorFixed(element)) {
       // Clip by viewport's size.
       visibleRect.left = Math.max(visibleRect.left, scrollX);
       visibleRect.top = Math.max(visibleRect.top, scrollY);
@@ -23806,9 +23806,10 @@
     targetOffset = [].concat(targetOffset);
     overflow = overflow || {};
     var newOverflowCfg = {};
-    var fail = 0; // 当前节点可以被放置的显示区域
+    var fail = 0;
+    var alwaysByViewport = !!(overflow && overflow.alwaysByViewport); // 当前节点可以被放置的显示区域
 
-    var visibleRect = getVisibleRectForElement(source); // 当前节点所占的区域, left/top/width/height
+    var visibleRect = getVisibleRectForElement(source, alwaysByViewport); // 当前节点所占的区域, left/top/width/height
 
     var elRegion = getRegion(source); // 将 offset 转换成数值，支持百分比
 
