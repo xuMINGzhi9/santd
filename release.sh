@@ -9,6 +9,7 @@ git commit -m 'deloy'
 current_git_branch_latest_id=`git rev-parse HEAD`
 git branch -D tempbranch
 git checkout -b tempbranch -f --track origin/cus_release
+git reset
 git cherry-pick $current_git_branch_latest_id
 mv dest/* ./
 rm -rf dest
