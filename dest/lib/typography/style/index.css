@@ -1,0 +1,251 @@
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
+.santd-typography {
+  color: rgba(0, 0, 0, 0.65);
+}
+.santd-typography-secondary {
+  color: rgba(0, 0, 0, 0.45);
+}
+.santd-typography-warning {
+  color: #d48806;
+}
+.santd-typography-danger {
+  color: #cf1322;
+}
+.santd-typography-disabled {
+  color: rgba(0, 0, 0, 0.25);
+  cursor: not-allowed;
+  user-select: none;
+}
+div.santd-typography,
+.santd-typography p {
+  margin-bottom: 1em;
+}
+h1.santd-typography,
+.santd-typography h1 {
+  margin-bottom: 0.5em;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 1.23;
+}
+h2.santd-typography,
+.santd-typography h2 {
+  margin-bottom: 0.5em;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.35;
+}
+h3.santd-typography,
+.santd-typography h3 {
+  margin-bottom: 0.5em;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.35;
+}
+h4.santd-typography,
+.santd-typography h4 {
+  margin-bottom: 0.5em;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+}
+.santd-typography + h1.santd-typography,
+.santd-typography + h2.santd-typography,
+.santd-typography + h3.santd-typography,
+.santd-typography + h4.santd-typography {
+  margin-top: 1.2em;
+}
+.santd-typography div + h1,
+.santd-typography ul + h1,
+.santd-typography li + h1,
+.santd-typography p + h1,
+.santd-typography h1 + h1,
+.santd-typography h2 + h1,
+.santd-typography h3 + h1,
+.santd-typography h4 + h1,
+.santd-typography div + h2,
+.santd-typography ul + h2,
+.santd-typography li + h2,
+.santd-typography p + h2,
+.santd-typography h1 + h2,
+.santd-typography h2 + h2,
+.santd-typography h3 + h2,
+.santd-typography h4 + h2,
+.santd-typography div + h3,
+.santd-typography ul + h3,
+.santd-typography li + h3,
+.santd-typography p + h3,
+.santd-typography h1 + h3,
+.santd-typography h2 + h3,
+.santd-typography h3 + h3,
+.santd-typography h4 + h3,
+.santd-typography div + h4,
+.santd-typography ul + h4,
+.santd-typography li + h4,
+.santd-typography p + h4,
+.santd-typography h1 + h4,
+.santd-typography h2 + h4,
+.santd-typography h3 + h4,
+.santd-typography h4 + h4 {
+  margin-top: 1.2em;
+}
+span.santd-typography-ellipsis {
+  display: inline-block;
+}
+.santd-typography a {
+  color: #1890ff;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.santd-typography a:focus,
+.santd-typography a:hover {
+  color: #40a9ff;
+}
+.santd-typography a:active {
+  color: #096dd9;
+}
+.santd-typography a:focus,
+.santd-typography a:hover {
+  color: #40a9ff;
+}
+.santd-typography a:focus {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+.santd-typography a:active {
+  color: #096dd9;
+}
+.santd-typography a:active,
+.santd-typography a:hover {
+  text-decoration: none;
+}
+.santd-typography a[disabled] {
+  color: rgba(0, 0, 0, 0.25);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.santd-typography code {
+  margin: 0 0.2em;
+  padding: 0.2em 0.4em 0.1em;
+  font-size: 85%;
+  background: rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 3px;
+}
+.santd-typography mark {
+  padding: 0;
+  background-color: #ffe58f;
+}
+.santd-typography u,
+.santd-typography ins {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+.santd-typography s,
+.santd-typography del {
+  text-decoration: line-through;
+}
+.santd-typography strong {
+  font-weight: 600;
+}
+.santd-typography-expand,
+.santd-typography-edit,
+.santd-typography-copy {
+  color: #1890ff;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  transition: color 0.3s;
+  margin-left: 8px;
+}
+.santd-typography-expand:focus,
+.santd-typography-edit:focus,
+.santd-typography-copy:focus,
+.santd-typography-expand:hover,
+.santd-typography-edit:hover,
+.santd-typography-copy:hover {
+  color: #40a9ff;
+}
+.santd-typography-expand:active,
+.santd-typography-edit:active,
+.santd-typography-copy:active {
+  color: #096dd9;
+}
+.santd-typography-expand:focus,
+.santd-typography-edit:focus,
+.santd-typography-copy:focus,
+.santd-typography-expand:hover,
+.santd-typography-edit:hover,
+.santd-typography-copy:hover {
+  color: #40a9ff;
+}
+.santd-typography-expand:focus,
+.santd-typography-edit:focus,
+.santd-typography-copy:focus {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+.santd-typography-expand:active,
+.santd-typography-edit:active,
+.santd-typography-copy:active {
+  color: #096dd9;
+}
+.santd-typography-copy-success,
+.santd-typography-copy-success:hover,
+.santd-typography-copy-success:focus {
+  color: #52c41a;
+}
+.santd-typography-edit-content {
+  position: relative;
+}
+div.santd-typography-edit-content {
+  left: -12px;
+  margin-top: -5px;
+  margin-bottom: calc(1em - 4px - 2px);
+}
+.santd-typography-edit-content-confirm {
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  color: rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+}
+.santd-typography ul,
+.santd-typography ol {
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+.santd-typography ul li,
+.santd-typography ol li {
+  margin: 0 0 0 20px;
+  padding: 0 0 0 4px;
+}
+.santd-typography ul li {
+  list-style-type: circle;
+}
+.santd-typography ul li li {
+  list-style-type: disc;
+}
+.santd-typography ol li {
+  list-style-type: decimal;
+}
+.santd-typography-ellipsis-single-line {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.santd-typography-ellipsis-multiple-line {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /*! autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
