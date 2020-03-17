@@ -19,7 +19,7 @@ git add dist
 git add es
 git add package.json
 git add README.md
-git commit -m 'deloy'
+git commit -m 'deloy' --no-verify
 git push origin HEAD:cus_release
 git checkout c_release -f
 git reset $current_git_branch_pre_id --hard
