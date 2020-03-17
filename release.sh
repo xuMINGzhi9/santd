@@ -12,7 +12,11 @@ git checkout -b tempbranch -f --track origin/cus_release
 git cherry-pick $current_git_branch_latest_id
 mv dest/* ./
 rm -rf dest
-git add .
+git add lib
+git add dist
+git add es
+git add package.json
+git add README.md
 git commit -m 'deloy'
 git push origin HEAD:cus_release
 git checkout c_release -f
