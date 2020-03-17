@@ -1,0 +1,104 @@
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
+.santd-layout {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  background: #f0f2f5;
+}
+.santd-layout,
+.santd-layout * {
+  box-sizing: border-box;
+}
+.santd-layout.santd-layout-has-sider {
+  flex-direction: row;
+}
+.santd-layout.santd-layout-has-sider > .santd-layout,
+.santd-layout.santd-layout-has-sider > .santd-layout-content {
+  overflow-x: hidden;
+}
+.santd-layout-header,
+.santd-layout-footer {
+  flex: 0 0 auto;
+}
+.santd-layout-header {
+  background: #001529;
+  padding: 0 50px;
+  height: 64px;
+  line-height: 64px;
+}
+.santd-layout-footer {
+  background: #f0f2f5;
+  padding: 24px 50px;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+}
+.santd-layout-content {
+  flex: auto;
+}
+.santd-layout-sider-dark {
+  background: #001529;
+}
+.santd-layout-sider {
+  transition: all 0.2s;
+  position: relative;
+  /* fix firefox can't set width smaller than content on flex item */
+  min-width: 0;
+}
+.santd-layout-sider-children {
+  height: 100%;
+  padding-top: 0.1px;
+  margin-top: -0.1px;
+}
+.santd-layout-sider-has-trigger {
+  padding-bottom: 48px;
+}
+.santd-layout-sider-right {
+  order: 1;
+}
+.santd-layout-sider-trigger {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  cursor: pointer;
+  height: 48px;
+  line-height: 48px;
+  color: #fff;
+  background: #002140;
+  z-index: 1;
+  transition: all 0.2s;
+}
+.santd-layout-sider-zero-width > * {
+  overflow: hidden;
+}
+.santd-layout-sider-zero-width-trigger {
+  position: absolute;
+  top: 64px;
+  right: -36px;
+  text-align: center;
+  width: 36px;
+  height: 42px;
+  line-height: 42px;
+  background: #001529;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.santd-layout-sider-zero-width-trigger:hover {
+  background: #192c3e;
+}
+.santd-layout-sider-light {
+  background: #fff;
+}
+.santd-layout-sider-light .santd-layout-sider-trigger {
+  color: rgba(0, 0, 0, 0.65);
+  background: #fff;
+}
+.santd-layout-sider-light .santd-layout-sider-zero-width-trigger {
+  color: rgba(0, 0, 0, 0.65);
+  background: #fff;
+}
