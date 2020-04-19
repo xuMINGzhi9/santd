@@ -1,0 +1,55 @@
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
+.santd-result {
+  padding: 48px 32px;
+}
+.santd-result-success .santd-result-icon .santd-icon {
+  color: #52c41a;
+}
+.santd-result-error .santd-result-icon .santd-icon {
+  color: #f5222d;
+}
+.santd-result-info .santd-result-icon .santd-icon {
+  color: #1890ff;
+}
+.santd-result-warning .santd-result-icon .santd-icon {
+  color: #faad14;
+}
+.santd-result-image {
+  width: 250px;
+  height: 295px;
+  margin: auto;
+}
+.santd-result-icon {
+  margin-bottom: 24px;
+  text-align: center;
+}
+.santd-result-icon .santd-icon {
+  font-size: 72px;
+}
+.santd-result-title {
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 24px;
+  line-height: 1.8;
+  text-align: center;
+}
+.santd-result-subtitle {
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+}
+.santd-result-extra {
+  margin-top: 32px;
+  text-align: center;
+}
+.santd-result-extra > * {
+  margin-right: 8px;
+}
+.santd-result-content {
+  margin-top: 24px;
+  padding: 24px 40px;
+  background-color: #fafafa;
+}
