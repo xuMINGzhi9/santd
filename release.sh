@@ -12,8 +12,13 @@ git checkout -b tempbranch -f --track origin/cus_release
 git reset
 git pull
 git cherry-pick $current_git_branch_latest_id
-mv dest/* ./
+cd dest
+tar cvzf app.tar.gz dist es lib * 
+mv app.tar.gz ../
+cd ..
+tar xzf app.tar.gz
 rm -rf dest
+rm -r app.tar.gz
 git add lib
 git add dist
 git add es
