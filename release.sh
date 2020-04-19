@@ -8,7 +8,7 @@ git add dest
 git commit -m 'deloy'
 current_git_branch_latest_id=`git rev-parse HEAD`
 git branch -D tempbranch
-git checkout -b tempbranch -f --track origin/cus_release_2
+git checkout -b tempbranch -f --track origin/cus_release_3
 git reset
 git pull
 git cherry-pick $current_git_branch_latest_id
@@ -21,7 +21,7 @@ git add package.json
 git add README.md
 git rm -r --cached dest
 git commit -m 'deloy' --no-verify
-git push origin HEAD:cus_release_2
+git push origin HEAD:cus_release_3
 git checkout c_release -f
 git reset $current_git_branch_pre_id --hard
 git branch -D tempbranch
