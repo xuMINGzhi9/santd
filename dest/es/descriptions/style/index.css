@@ -1,0 +1,91 @@
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
+.santd-descriptions-title {
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.santd-descriptions-view {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.santd-descriptions-view table {
+  width: 100%;
+  table-layout: fixed;
+}
+.santd-descriptions-row > th,
+.santd-descriptions-row > td {
+  padding-bottom: 16px;
+}
+.santd-descriptions-row:last-child {
+  border-bottom: none;
+}
+.santd-descriptions-item-label {
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+.santd-descriptions-item-label::after {
+  position: relative;
+  top: -0.5px;
+  margin: 0 8px 0 2px;
+  content: ':';
+}
+.santd-descriptions-item-no-label::after {
+  content: '';
+  margin: 0;
+}
+.santd-descriptions-item-content {
+  display: table-cell;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.santd-descriptions-item {
+  padding-bottom: 0;
+}
+.santd-descriptions-item > span {
+  display: inline-block;
+}
+.santd-descriptions-bordered .santd-descriptions-view {
+  border: 1px solid #e8e8e8;
+}
+.santd-descriptions-bordered .santd-descriptions-view > table {
+  table-layout: auto;
+}
+.santd-descriptions-bordered .santd-descriptions-item-label,
+.santd-descriptions-bordered .santd-descriptions-item-content {
+  padding: 16px 24px;
+  border-right: 1px solid #e8e8e8;
+}
+.santd-descriptions-bordered .santd-descriptions-item-label:last-child,
+.santd-descriptions-bordered .santd-descriptions-item-content:last-child {
+  border-right: none;
+}
+.santd-descriptions-bordered .santd-descriptions-item-label {
+  background-color: #fafafa;
+}
+.santd-descriptions-bordered .santd-descriptions-item-label::after {
+  display: none;
+}
+.santd-descriptions-bordered .santd-descriptions-row {
+  border-bottom: 1px solid #e8e8e8;
+}
+.santd-descriptions-bordered .santd-descriptions-row:last-child {
+  border-bottom: none;
+}
+.santd-descriptions-bordered.santd-descriptions-middle .santd-descriptions-item-label,
+.santd-descriptions-bordered.santd-descriptions-middle .santd-descriptions-item-content {
+  padding: 12px 24px;
+}
+.santd-descriptions-bordered.santd-descriptions-small .santd-descriptions-item-label,
+.santd-descriptions-bordered.santd-descriptions-small .santd-descriptions-item-content {
+  padding: 8px 16px;
+}
