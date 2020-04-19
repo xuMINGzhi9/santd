@@ -22128,7 +22128,10 @@
         var useNode = this.el.querySelector('use');
         useNode.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', '#' + type);
       },
-      template: "\n            <span>\n                <s-icon\n                    theme=\"{{theme}}\"\n                    spin=\"{{spin}}\"\n                    rotate=\"{{rotate}}\"\n                    bodyStyle=\"{{bodyStyle}}\"\n                    twoToneColor=\"{{twoToneColor}}\"\n                    viewBox=\"0 0 1024 1024\"\n                    s-bind=\"{{extraCommonProps}}\"\n                >\n                    <use></use>\n                </s-icon>\n            </span>\n        "
+      handleClick: function handleClick(e) {
+        this.fire('click', e);
+      },
+      template: "\n            <span on-click=\"handleClick\">\n                <s-icon\n                    theme=\"{{theme}}\"\n                    spin=\"{{spin}}\"\n                    rotate=\"{{rotate}}\"\n                    bodyStyle=\"{{bodyStyle}}\"\n                    twoToneColor=\"{{twoToneColor}}\"\n                    viewBox=\"0 0 1024 1024\"\n                    s-bind=\"{{extraCommonProps}}\"\n                >\n                    <use></use>\n                </s-icon>\n            </span>\n        "
     });
   }
 
