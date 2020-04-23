@@ -9781,7 +9781,7 @@ mark {
     opacity: 0;
   }
 }
-/*.@{prefix-cls} {
+/*.@{badge-prefix-cls} {
     .reset-component;
     position: relative;
     display: inline-block;
@@ -9905,7 +9905,7 @@ mark {
             position: relative;
         }
 
-        .@{prefix-cls}-count {
+        .@{badge-prefix-cls}-count {
             transform: none;
         }
     }
