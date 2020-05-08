@@ -26027,6 +26027,8 @@
           $dropdown.handleKeyDown(e, this.handleBackfill.bind(this));
         }
       }
+
+      this.fire('input-keydown', e);
     },
     handleKeyDown: function handleKeyDown(e) {
       var _this$data$get7 = this.data.get(),
